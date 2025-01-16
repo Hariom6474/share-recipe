@@ -10,8 +10,9 @@ async function login(e) {
     // alert("Logged in Successfully.");
     const log = await axios.post("/login", myObj);
     clear();
-    localStorage.setItem("token", log.data.token);
-    // console.log(log, "post");
+    const setToken = log.data.token;
+    localStorage.setItem("token", setToken);
+    // console.log(log.data.token, "post");
     window.location.href = "/";
   } catch (err) {
     console.log(err);

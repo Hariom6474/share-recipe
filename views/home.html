@@ -1,11 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Home</title>
 </head>
+
 <body>
-    <h1>home</h1>
+    <nav class="navbar navbar-expand-lg " style="background-color: #fab397;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class='bx bx-menu'></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item fw-bold fs-4">Share Recipe</li>
+                    <li class="nav-item px-2">
+                        <!-- use debouncing -->
+                        <a class="nav-link cursor-pointer" id="addRecipe">Add a Recipe</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link cursor-pointer" id="Search">Search</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link cursor-pointer" id="links">Links</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link cursor-pointer" id="login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container d-flex py-3">
+        <div class="container d-flex">
+            <div class="px-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/dish1.jpg" class="card-img-top" alt="Dish">
+                    <div class="card-body">
+                        <h5 class="card-title">Dish-1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, asperiores.
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="px-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/dish1.jpg" class="card-img-top" alt="Dish">
+                    <div class="card-body">
+                        <h5 class="card-title">Dish-1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, asperiores.
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More...</a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="px-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/dish1.jpg" class="card-img-top" alt="Dish">
+                    <div class="card-body">
+                        <h5 class="card-title">Dish-1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, asperiores.
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More...</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- <div class="container d-flex py-3">
+        <div class="px-2">
+            <div class="card" style="width: 18rem;">
+                <img src="/images/dish1.jpg" class="card-img-top" alt="Dish">
+                <div class="card-body">
+                    <h5 class="card-title">Dish-1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, asperiores.
+                    </p>
+                    <a href="#" class="btn btn-primary">Read More...</a>
+                </div>
+            </div>
+        </div>
+        <div class="px-2">
+            <div class="card" style="width: 18rem;">
+                <img src="/images/dish1.jpg" class="card-img-top" alt="Dish">
+                <div class="card-body">
+                    <h5 class="card-title">Dish-1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, asperiores.
+                    </p>
+                    <a href="#" class="btn btn-primary">Read More...</a>
+                </div>
+            </div>
+        </div>
+        <div class="px-2">
+            <div class="card" style="width: 18rem;">
+                <img src="/images/dish1.jpg" class="card-img-top" alt="Dish">
+                <div class="card-body">
+                    <h5 class="card-title">Dish-1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, asperiores.
+                    </p>
+                    <a href="#" class="btn btn-primary">Read More...</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/home.js"></script>
 </body>
+
 </html>
